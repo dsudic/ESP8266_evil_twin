@@ -1,0 +1,55 @@
+{
+  "interface": {
+    "display": {
+      "enabled": true,
+      "pins": [5, 4],
+      "size": [128, 64]
+    },
+    "button": {
+      "enabled": true,
+      "pin": 0
+    }
+  },
+  "tools": {
+    "server": {
+      "max_users": 5
+    },
+    "config_mode": {
+      "essid": "EVIL-ESP",
+      "password": "ESPassword"
+    }
+  },
+  "attacks": {
+    "default": "evil_twin",
+    "beacon_spammer": {
+      "channel": 10,
+      "essids": [
+        "Mom Use This One",
+        "Abraham Linksys",
+        "Benjamin FrankLAN",
+        "Martin Router King",
+        "John Wilkes Bluetooth",
+        "Pretty Fly for a Wi-Fi",
+        "Bill Wi the Science Fi",
+        "I Believe Wi Can Fi",
+        "Tell My Wi-Fi Love Her",
+        "No More Mister Wi-Fi",
+        "LAN Solo",
+        "The LAN Before Time",
+        "Silence of the LANs",
+        "House LANister",
+        "Winternet Is Coming",
+        "Ping's Landing",
+        "The Ping in the North"
+      ]
+    },
+    "captive_portal": {
+      "lang": "en",
+      "essid": "Free WiFi"
+    },
+    "evil_twin": {
+      "lang": "en",
+      "default_essid": "eduroam"
+    }
+  }
+}
